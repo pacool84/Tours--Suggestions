@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
+import Tours from "./Tours";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -22,7 +23,7 @@ function App() {
   if (loading === true) {
     return <Loading />;
   }
-  return <h1>Hello my friend React</h1>;
+  return <Tours tours={tours} />;
 }
 
 export default App;
