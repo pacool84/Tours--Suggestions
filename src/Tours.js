@@ -1,16 +1,12 @@
 import React from "react";
+import Tour from "./Tour";
 
 function Tours({ tours }) {
   return (
     <div>
-      <h2>Our Suggestions</h2>
+      <h2 className='tours-title'>Our Suggestions</h2>
       {tours.map((tour) => {
-        return (
-          <article key={tour.id}>
-            <h3>{tour.name}</h3>
-            <img src={tour.image} alt={tour.name} />
-          </article>
-        );
+        return <Tour key={tour.id} {...tour} />;
       })}
     </div>
   );

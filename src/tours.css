@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tours-title {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #11698e;
+  font-size: 35px;
+  line-height: 10px;
+}
+
+.tour-article {
+  width: 750px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto 30px auto;
+  box-shadow: -4px 21px 45px -17px rgba(25, 69, 107, 1);
+  border-radius: 10px;
+}
+
+.tour-article img {
+  height: 350px;
+  width: 600px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.tour-article__section {
+  width: 600px;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+
+.tour-article__section h3 {
+  color: #11698e;
+}
+
+.tour-article__info {
+  max-width: 700px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}

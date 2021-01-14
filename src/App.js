@@ -9,11 +9,19 @@ function App() {
 
   const fetchTours = async () => {
     setLoading(true);
-    const response = await fetch(URL);
-    const tours = await response.json();
-    setLoading(false);
-    console.log(tours);
-    setTours(tours);
+
+    try {
+      const response = await fetch(URL);
+      const tours = await response.json();
+      setLoading(false);
+      console.log(tours);
+      setTours(tours);
+    } catch (error) {
+      console.log("====================================");
+      console.log(error);
+      console.log("====================================");
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
@@ -23,7 +31,11 @@ function App() {
   if (loading === true) {
     return <Loading />;
   }
-  return <Tours tours={tours} />;
+  return (
+    <header>
+      <Tours tours={tours} />;
+    </header>
+  );
 }
 
 export default App;
