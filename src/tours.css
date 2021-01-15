@@ -19,7 +19,7 @@
 
 .tour-article {
   width: 750px;
-  height: 600px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,5 +67,19 @@
   border: transparent;
   font-size: 16px;
   color: #16c79a;
+  cursor: pointer;
+}
+
+.tour-article__remove {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 150px;
+  height: 30px;
+  border: transparent;
+  border-radius: 5px;
+  background-color: #ff577f;
+  opacity: 63%;
+  font-size: 15px;
+  color: whitesmoke;
   cursor: pointer;
 }
