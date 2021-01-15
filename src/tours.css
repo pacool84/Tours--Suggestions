@@ -62,6 +62,10 @@
 }
 
 .tour-article__toggle {
-  margin-left: 10px;
   width: 80px;
+  background-color: transparent;
+  border: transparent;
+  font-size: 16px;
+  color: #16c79a;
+  cursor: pointer;
 }
