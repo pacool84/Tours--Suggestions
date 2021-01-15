@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
 import Tours from "./Tours";
+import "./tours.css";
+import "./app.css";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -40,9 +42,16 @@ function App() {
 
   if (tours.length === 0) {
     return (
-      <header>
-        <h2>No more tours</h2>
-        <button onClick={() => fetchTours()}>Refresh</button>
+      <header className='header-notours'>
+        <div>
+          <h2 className='header-title__notours'>No more tours</h2>
+          <button
+            onClick={() => fetchTours()}
+            className='header-button__refresh'
+          >
+            Refresh
+          </button>
+        </div>
       </header>
     );
   }
