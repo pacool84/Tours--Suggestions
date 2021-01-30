@@ -1,8 +1,13 @@
 import React from "react";
 import "./loading.css";
-
+import * as ReactBootStrap from "react-bootstrap";
 const Loading = () => {
-  return <h1 className='loading'>I´m Loading Please Wait...</h1>;
+  return (
+    <div className='loading'>
+      <h1>Loading...</h1>
+      <ReactBootStrap.Spinner animation='border' variant='success' />
+    </div>
+  );
 };
 
 export default Loading;
